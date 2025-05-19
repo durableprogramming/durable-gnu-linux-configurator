@@ -21,7 +21,7 @@ fi
 mkdir -p ~/.config/nvim/plugin/after
 cp $OMAKUB_PATH/configs/neovim/transparency.lua ~/.config/nvim/plugin/after/
 sed -i 's/checker = { enabled = true }/checker = { enabled = true, notify = false }/g' ~/.config/nvim/lua/config/lazy.lua
-source ~/.local/share/omakub/applications/Neovim.sh
+source ~/.local/share/dugnlico/applications/Neovim.sh
 
 # New font size setup
 cp $OMAKUB_PATH/configs/alacritty/font-size.toml ~/.config/alacritty/
@@ -44,7 +44,7 @@ source $OMAKUB_PATH/install/terminal/app-fastfetch.sh
 source $OMAKUB_PATH/install/terminal/apps-terminal.sh
 
 # Add new desktop applications icons
-source $OMAKUB_PATH/applications/Omakub.sh
+source $OMAKUB_PATH/applications/Durable GNU-Linux Configurator.sh
 source $OMAKUB_PATH/applications/About.sh
 source $OMAKUB_PATH/applications/Activity.sh
 source $OMAKUB_PATH/applications/Docker.sh
@@ -64,7 +64,7 @@ gum style \
 	--foreground 212 --border-foreground 212 --border double \
 	--align left --width 80 --margin "1 2" --padding "2 4" \
 	"1. alacritty.toml config moved to .bak to include new font-size.toml" \
-	"2. Alacritty theme/font has been reset. Use omakub app to set again." \
+	"2. Alacritty theme/font has been reset. Use dugnlico app to set again." \
 	"3. To use Pano, the new clipboard manager, enable in Gnome Extensions."
 
 gum confirm "Set your application dock to default with new apps?" && source $OMAKUB_PATH/install/desktop/set-dock.sh

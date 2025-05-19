@@ -20,5 +20,5 @@ else
 fi
 
 clear
-source $OMAKUB_PATH/bin/omakub-sub/header.sh
-source $OMAKUB_PATH/bin/omakub-sub/install.sh
+source $OMAKUB_PATH/bin/dugnlico-sub/header.sh
+source $OMAKUB_PATH/bin/dugnlico-sub/install.sh

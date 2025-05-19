@@ -1,10 +1,10 @@
-# Configure the bash shell using Omakub defaults
+# Configure the bash shell using Durable GNU-Linux Configurator defaults
 [ -f "~/.bashrc" ] && mv ~/.bashrc ~/.bashrc.bak
-cp ~/.local/share/omakub/configs/bashrc ~/.bashrc
+cp ~/.local/share/dugnlico/configs/bashrc ~/.bashrc
 
 # Load the PATH for use later in the installers
-source ~/.local/share/omakub/defaults/bash/shell
+source ~/.local/share/dugnlico/defaults/bash/shell
 
 [ -f "~/.inputrc" ] && mv ~/.inputrc ~/.inputrc.bak
-# Configure the inputrc using Omakub defaults
-cp ~/.local/share/omakub/configs/inputrc ~/.inputrc
+# Configure the inputrc using Durable GNU-Linux Configurator defaults
+cp ~/.local/share/dugnlico/configs/inputrc ~/.inputrc

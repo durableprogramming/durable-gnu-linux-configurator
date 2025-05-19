@@ -10,5 +10,5 @@ source $OMAKUB_PATH/applications/Basecamp.sh
 source $OMAKUB_PATH/applications/HEY.sh
 source $OMAKUB_PATH/applications/Docker.sh
 source $OMAKUB_PATH/applications/Neovim.sh
-source $OMAKUB_PATH/applications/Omakub.sh
+source $OMAKUB_PATH/applications/Durable GNU-Linux Configurator.sh
 source $OMAKUB_PATH/applications/WhatsApp.sh

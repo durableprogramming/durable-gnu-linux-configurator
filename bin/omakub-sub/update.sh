@@ -1,5 +1,5 @@
 CHOICES=(
-	"Omakub        Update Omakub itself and run any migrations"
+	"Durable GNU-Linux Configurator        Update Durable GNU-Linux Configurator itself and run any migrations"
 	"Ollama        Run LLMs, like Meta's Llama3, locally"
 	"LazyGit       TUI for Git"
 	"LazyDocker    TUI for Docker"
@@ -17,7 +17,7 @@ else
 	INSTALLER=$(echo "$CHOICE" | awk -F ' {2,}' '{print $1}' | tr '[:upper:]' '[:lower:]' | sed 's/ /-/g')
 
 	case "$INSTALLER" in
-	"omakub") INSTALLER_FILE="$OMAKUB_PATH/bin/omakub-sub/migrate.sh" ;;
+	"dugnlico") INSTALLER_FILE="$OMAKUB_PATH/bin/dugnlico-sub/migrate.sh" ;;
 	"ollama") INSTALLER_FILE="$OMAKUB_PATH/install/terminal/optional/app-ollama.sh" ;;
 	*) INSTALLER_FILE="$OMAKUB_PATH/install/terminal/app-$INSTALLER.sh" ;;
 	esac
@@ -26,4 +26,4 @@ else
 fi
 
 clear
-source $OMAKUB_PATH/bin/omakub
+source $OMAKUB_PATH/bin/dugnlico

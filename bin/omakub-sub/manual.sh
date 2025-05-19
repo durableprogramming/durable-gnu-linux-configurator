@@ -1,2 +1,2 @@
-xdg-open "https://manual.omakub.org" &>/dev/null
-source $OMAKUB_PATH/bin/omakub-sub/menu.sh
+xdg-open "https://manual.dugnlico.org" &>/dev/null
+source $OMAKUB_PATH/bin/dugnlico-sub/menu.sh
