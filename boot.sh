@@ -1,11 +1,7 @@
-set -e
+set -edugnlico
 
-ascii_art='________                  __        ___.
-\_____  \   _____ _____  |  | ____ _\_ |__
- /   |   \ /     \\__   \ |  |/ /  |  \ __ \
-/    |    \  Y Y  \/ __ \|    <|  |  / \_\ \
-\_______  /__|_|  (____  /__|_ \____/|___  /
-        \/      \/     \/     \/         \/
+ascii_art='
+DugNiLiCo
 '
 
 echo -e "$ascii_art"
@@ -17,7 +13,7 @@ sudo apt-get install -y git >/dev/null
 
 echo "Cloning Durable GNU-Linux Configurator..."
 rm -rf ~/.local/share/dugnlico
-git clone https://github.com/basecamp/dugnlico.git ~/.local/share/dugnlico >/dev/null
+git clone https://github.com/durableprogramming/durable-gnu-linux-configurator.git ~/.local/share/dugnlico >/dev/null
 if [[ $OMAKUB_REF != "master" ]]; then
 	cd ~/.local/share/dugnlico
 	git fetch origin "${OMAKUB_REF:-stable}" && git checkout "${OMAKUB_REF:-stable}"
